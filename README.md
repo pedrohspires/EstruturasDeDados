@@ -7,6 +7,6 @@ O objetivo deste repositório é disponibilizar uma implementação em portuguê
 programação que estão buscando referências na linguagem pt-br. <br/><br/>
 
 Estruturas implementadas neste repositório:<br/>
-* Lista Sequêncial Estática: ver arquivo lista.md
+* Lista Sequêncial Estática: ver arquivo README.md dentro da pasta "lista"
 
 <br/>
