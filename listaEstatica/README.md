@@ -7,12 +7,12 @@ As listas estáticas são caracterizadas por terem um vetor de dados, sejam eles
 ou estruturados, e um valor inteiro que informa a quantidade de elementos válidos que estão na lista. <br/><br>
 
 ### Como executar o programa:
-Entre na pasta listaEstatica pelo terminal ou CMD
-No caso do Windows, digite o seguinte comando:
-`gcc -c main.c lista\lista.c && gcc lista\lista.h main.o lista.o && a.exe`
-No caso de Linux, digite o seguinte comando:
-`gcc -c main.c lista\lista.c && gcc lista\lista.h main.o lista.o && a.out`
-A diferença entre os dois é apenas o executável gerado na compilação, onde no Windows é .exe e no linux é .out
+Entre na pasta listaEstatica pelo terminal ou CMD<br/>
+No caso do Windows, digite o seguinte comando:<br/>
+`gcc -c main.c lista\lista.c && gcc lista\lista.h main.o lista.o && a.exe`<br/>
+No caso de Linux, digite o seguinte comando:<br/>
+`gcc -c main.c lista\lista.c && gcc lista\lista.h main.o lista.o && a.out`<br/>
+A diferença entre os dois é apenas o executável gerado na compilação, onde no Windows é .exe e no linux é .out<br/>
 
 ### Funções de uma lista:
 #### Criar a lista
