@@ -21,7 +21,7 @@ int main(){
     //Testes de inserção
     //Inserindo na lista e mostrando o tamanho após cada inserção
     //Inserindo no final
-    printf("%d\n", tamanho_lista(Li));
+    printf("Insercoes\n%d\n", tamanho_lista(Li));
     insere_lista_final(Li, d1);
     printf("%d\n", tamanho_lista(Li));
     insere_lista_final(Li, d2);
@@ -40,6 +40,7 @@ int main(){
 
     //Testes de remoção
     //Removendo Pedro Henrique
+    printf("\n\nRemocao\n");
     remove_lista(Li, "Pedro Henrique");
     print_lista(Li);
     //Removendo no final
