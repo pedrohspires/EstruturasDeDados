@@ -69,6 +69,37 @@ int insere_lista_inicio(Lista *L, Dado D);
 */
 int insere_lista_ordenada(Lista *L, Dado D);
 
+/**
+ * Para remover da lista no final, simplesmente diminuir o valor de qtd. Não é necessário alterar
+ * o valor guardado na posição removida, pois ela não estará mais acessível ao programa.
+ * Cuidados:
+ * 1. A lista tem que está alocada;
+ * 2. A lista não pode está vazia.
+ * Retorna 1 para sucesso e 0 para erro.
+*/
+int remove_final_lista(Lista *L);
+
+/**
+ * Para remover no início da lista, é necessário realocar todos os dados posteriores uma posição
+ * para trás.
+ * Cuidados:
+ * 1. A lista tem que está alocada;
+ * 2. A lista não pode está vazia.
+ * Retorna 1 para sucesso e 0 para erro.
+*/
+int remove_inicio_lista(Lista *L);
+
+/**
+ * Para remover um item específico, tem que ser passado algum dado para comparação.
+ * Esta função deve ser modelada de acordo com o tipo de estrutura Dado que está sendo utilizado.
+ * Nesse caso, utilizarei o campo Nome para buscar um campo específico.
+ * Cuidados:
+ * 1. A lista tem que está alocada;
+ * 2. A lista não pode está vazia.
+ * Retorna 1 para sucesso, 0 para erro ou -1 para dado não encontrado
+*/
+int remove_lista(Lista *L, char nome[]);
+
 
 //Funções não essenciais
 //Mostra a lista

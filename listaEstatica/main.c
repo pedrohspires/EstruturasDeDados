@@ -18,6 +18,7 @@ int main(){
     Dado d4 = {"Pedro Henrique", 20};
     Dado d5 = {"Eric", 14};
 
+    //Testes de inserção
     //Inserindo na lista e mostrando o tamanho após cada inserção
     //Inserindo no final
     printf("%d\n", tamanho_lista(Li));
@@ -34,7 +35,18 @@ int main(){
     insere_lista_inicio(Li, d5);
     printf("%d\n", tamanho_lista(Li));
  
-    //printando a lista na tela
+    //mostrando a lista na tela
+    print_lista(Li);
+
+    //Testes de remoção
+    //Removendo Pedro Henrique
+    remove_lista(Li, "Pedro Henrique");
+    print_lista(Li);
+    //Removendo no final
+    remove_final_lista(Li);
+    print_lista(Li);
+    //Removendo no início
+    remove_inicio_lista(Li);
     print_lista(Li);
 
     return 0;
