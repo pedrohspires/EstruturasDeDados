@@ -27,9 +27,9 @@ Retornam inteiros, onde 0 (zero) é falso e 1 é veradeiro
 #### Inserções
 Existem três tipos de inserção na lista: no início, fim e de forma ordenada. Esta última exige
 uma verificação que pode ser efetuada em um dado específico da lista e a lista necessáriamente tem que está ordenada.<br/>
-Retornam a lista modificada
+Retornam um inteiro, onde 0 (zero) significa erro e 1 que a operação foi bem sucedida.
 #### Remoções
 Existem também três tipos de remoções em uma lista, semelhante às inserções: no início, no fim e de um dado específico.<br/>
-Retornam a lista ordenada.<br/>
+Retornam 1 para operação bem sucedida e 0 para erro.<br/>
 
 ### Mais detalhes dentro da pasta "lista", no README.md.
