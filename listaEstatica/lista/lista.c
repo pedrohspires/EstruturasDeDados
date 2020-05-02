@@ -110,6 +110,29 @@ int remove_lista(Lista *L, char nome[]){
     return 0;
 }
 
+int consulta_pos(Lista *L, int pos, Dado *D){
+    if(L != NULL && !lista_vazia(L)){
+        if(pos > L->qtd)
+            return -1;
+        *D=L->dados[pos-1];
+        return 1;
+    }
+    return 0;
+}
+
+int consulta(Lista *L, char nome[], Dado *D){
+    if(L != NULL && !lista_vazia(L)){
+        int cont=0;
+        while(cont<L->qtd && strcmp(L->dados[cont].nome, nome))
+            cont++;
+        if(cont < L->qtd){
+            *D=L->dados[cont];
+            return 1;
+        }
+    }
+    return 0;
+}
+
 
 void print_lista(Lista *L){
     if(L != NULL && !lista_vazia(L)){

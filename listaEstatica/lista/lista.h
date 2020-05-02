@@ -100,6 +100,32 @@ int remove_inicio_lista(Lista *L);
 */
 int remove_lista(Lista *L, char nome[]);
 
+/**
+ * Para consultar o Dado guardado em uma determinada posição, é necessário passar uma posição
+ * e um endereço de memória (ponteiro *) para uma estrutura Dado que vai receber os dados guardados
+ * na posição passada.
+ * Cuidados:
+ * 1. A lista tem que está alocada;
+ * 2. A lista não pode ser vazia;
+ * 3. A posição passada tem que ser válida (pos <= qtd)
+ * Retorna 1 para dado existente, 0 para erro e -1 para não encontrado ou posição inválida
+ * O dado da posição encontrada, se existir, é retornado pelo ponteiro *D
+*/
+int consulta_pos(Lista *L, int pos, Dado *D);
+
+/**
+ * Para consultar por algum dado específico da estrutura é necessária uma comparação em todas as posições
+ * da lista.
+ * Essa função deve ser modelada de acordo com os dados da estrutura Dado.
+ * Nesse caso, irei procurar pelo campo nome da estrutura.
+ * Cuidados:
+ * 1. A lista tem que está alocada;
+ * 2. A lista não pode está vazia.
+ * Retorna 1 para dado encontrado, 0 para não encontrado.
+ * O dado da posição encontrada, se existir, é retornado pelo ponteiro *D
+*/
+int consulta(Lista *L, char nome[], Dado *D);
+
 
 //Funções não essenciais
 //Mostra a lista

@@ -50,5 +50,13 @@ int main(){
     remove_inicio_lista(Li);
     print_lista(Li);
 
+
+    //Testes de consulta
+    Dado dTeste;
+    consulta_pos(Li, 2, &dTeste);
+    printf("Consulta pela posicao 2:\nNome: %s\nIdade: %d\n", dTeste.nome, dTeste.idade);
+    consulta(Li, "Joao", &dTeste);
+    printf("Consulta pelo nome 'Jose':\nNome: %s\nIdade: %d\n", dTeste.nome, dTeste.idade);
+
     return 0;
 }
